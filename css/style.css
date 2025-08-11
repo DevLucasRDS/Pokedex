@@ -1,0 +1,53 @@
+@import url("https://fonts.cdnfonts.com/css/pokemon-solid");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Pokemon Solid", sans-serif;
+	letter-spacing: 2px;
+}
+header {
+	color: yellow;
+	text-shadow: 2px 2px 0 black, -2px 2px 0 black, 2px -2px 0 black, -2px -2px 0 black;
+	background-color: red;
+	letter-spacing: 4px;
+}
+body {
+	background-image: url(../imagens/background-pixel.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	text-align: center;
+	min-height: 100vh;
+}
+main {
+	display: inline-block;
+	margin-top: 2%;
+	padding: 15px;
+	position: relative;
+}
+.Pokedex {
+	width: 100%;
+	max-width: 425px;
+}
+.pokemon-image {
+	position: absolute;
+	bottom: 55%;
+	left: 50%;
+	transform: translate(-63%, 28%);
+	height: 18%;
+}
+.pokemon-data {
+	position: absolute;
+	color: #aaa;
+	top: 50%;
+	right: 27%;
+	font-size: clamp(8px, 5vw, 25px);
+}
+.pokemon-nome {
+	color: yellow;
+	letter-spacing: 4px;
+	text-shadow: 2px 2px 0 black, -2px 2px 0 black, 2px -2px 0 black, -2px -2px 0 black;
+	text-transform: capitalize;
+}
