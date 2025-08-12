@@ -1,15 +1,16 @@
 @import url("https://fonts.cdnfonts.com/css/pokemon-solid");
+@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap");
 
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: "Pokemon Solid", sans-serif;
 	letter-spacing: 2px;
 }
 header {
 	color: yellow;
 	text-shadow: 2px 2px 0 black, -2px 2px 0 black, 2px -2px 0 black, -2px -2px 0 black;
+	font-family: "Pokemon Solid", sans-serif;
 	background-color: red;
 	letter-spacing: 4px;
 }
@@ -31,7 +32,7 @@ main {
 	width: 100%;
 	max-width: 425px;
 }
-.pokemon-image {
+.pokemon-imagem {
 	position: absolute;
 	bottom: 55%;
 	left: 50%;
@@ -41,13 +42,66 @@ main {
 .pokemon-data {
 	position: absolute;
 	color: #aaa;
-	top: 50%;
+	top: 53.8%;
 	right: 27%;
-	font-size: clamp(8px, 5vw, 25px);
+	font-family: "Pokemon Solid", sans-serif;
+	font-size: clamp(8px, 5vw, 0.8rem);
 }
 .pokemon-nome {
 	color: yellow;
 	letter-spacing: 4px;
 	text-shadow: 2px 2px 0 black, -2px 2px 0 black, 2px -2px 0 black, -2px -2px 0 black;
 	text-transform: capitalize;
+}
+.form {
+	position: absolute;
+	width: 65%;
+	top: 65%;
+	left: 13.5%;
+}
+.input_pesquisa {
+	width: 100%;
+	padding: 4%;
+	outline: none;
+	border: 2px solid #333;
+	border-radius: 5px;
+	color: yellow;
+	letter-spacing: 3px;
+	font-size: clamp(8px, 5vw, 0.8rem);
+	text-shadow: 1px 1px 0 black, -1px 1px 0 black, 1px -1px 0 black, -1px -1px 0 black;
+	box-shadow: -3px 4px 0 #888, -5px 7px 0 #333;
+	font-family: "Pokemon Solid", sans-serif;
+}
+.buttons {
+	position: absolute;
+	bottom: 12%;
+	left: 50%;
+	width: 60%;
+	transform: translate(-55%, 0);
+}
+.buttons {
+	position: absolute;
+	bottom: 10%;
+	left: 50%;
+	width: 65%;
+	transform: translate(-57%, 0);
+	display: flex;
+	gap: 20px;
+}
+
+.button {
+	width: 50%;
+	padding: 4%;
+	border: 2px solid #000;
+	border-radius: 5px;
+	font-size: clamp(8px, 5vw, 1rem);
+	font-weight: 600;
+	color: white;
+	background-color: #444;
+	box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
+}
+
+.button:active {
+	box-shadow: inset -4px 4px 0 #222;
+	font-size: 0.9rem;
 }
