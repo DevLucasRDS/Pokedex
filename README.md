@@ -10,14 +10,14 @@ Teste prático Unifametro: uma aplicação web de Pokédex utilizando HTML, CSS 
 2. Estilização (CSS)
 ✅ Defina um estilo geral para a Pokédex (fontes, cores, etc.).
 ✅Estilize o layout da página para que a Pokédex fique centralizada na tela.
-❌Estilize a exibição dos detalhes do Pokémon (imagem, nome, tipo).
-❌Crie estilos responsivos para diferentes tamanhos de tela.
+✅Estilize a exibição dos detalhes do Pokémon (imagem, nome, tipo).
+✅Crie estilos responsivos para diferentes tamanhos de tela.
 
 3. Lógica de Busca (JavaScript)
-❌Implemente a captura do valor do campo de entrada ao clicar no botão de busca.
-❌Faça uma requisição à PokéAPI para buscar os dados do Pokémon usando o nome ou ID
+✅Implemente a captura do valor do campo de entrada ao clicar no botão de busca.
+✅Faça uma requisição à PokéAPI para buscar os dados do Pokémon usando o nome ou ID
    fornecido.
-❌Exiba as informações básicas do Pokémon (nome, imagem, tipo) na página.
+✅Exiba as informações básicas do Pokémon (nome, imagem, tipo) na página.
 ❌Trate erros de busca, exibindo uma mensagem caso o Pokémon não seja encontrado
 
 4. Exibição de Lista de Pokémon
