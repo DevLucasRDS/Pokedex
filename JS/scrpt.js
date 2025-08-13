@@ -35,7 +35,7 @@ const renderPokemon = async (pokemon) => {
 
 		input.value = "";
 	} else {
-		pokemonImagem.src = "./imagens/pokedex-fechada.png";
+		pokemonImagem.src = "./imagens/notFound.png";
 		pokemonNome.innerHTML = "Not Found";
 		pokemonNumero.innerHTML = "";
 	}

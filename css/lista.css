@@ -1,0 +1,48 @@
+main {
+	display: block;
+	width: 100%;
+	padding: 15px;
+	margin-top: 2%;
+	position: relative;
+	box-sizing: border-box;
+}
+
+.form {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.input_pesquisa {
+	width: 95%;
+	max-width: 1200px;
+	padding: 15px 20px;
+	outline: none;
+	border: 2px solid #333;
+	border-radius: 8px;
+	color: #444;
+	font-size: 1rem;
+	font-family: "Oxanium", sans-serif;
+	box-shadow: -3px 4px 0 #888, -5px 7px 0 #333;
+}
+.lista-pokemons {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 16px;
+	margin-top: 24px;
+	padding: 0;
+	list-style: none;
+	justify-content: center;
+}
+
+.lista-pokemons li {
+	background: #fff;
+	border-radius: 8px;
+	box-shadow: 0 2px 8px #ccc;
+	padding: 12px 20px;
+	font-family: "Oxanium", sans-serif;
+	font-size: 1rem;
+	color: #444;
+	min-width: 120px;
+	text-align: center;
+}

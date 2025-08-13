@@ -1,33 +1,6 @@
 @import url("https://fonts.cdnfonts.com/css/pokemon-solid");
 @import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap");
 
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	letter-spacing: 2px;
-}
-header {
-	color: yellow;
-	text-shadow: 2px 2px 0 black, -2px 2px 0 black, 2px -2px 0 black, -2px -2px 0 black;
-	font-family: "Pokemon Solid", sans-serif;
-	background-color: red;
-	letter-spacing: 4px;
-}
-body {
-	background-image: url(../imagens/background-pixel.png);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	text-align: center;
-	min-height: 100vh;
-}
-main {
-	display: inline-block;
-	margin-top: 2%;
-	padding: 15px;
-	position: relative;
-}
 .Pokedex {
 	width: 100%;
 	max-width: 425px;
@@ -50,7 +23,7 @@ main {
 .pokemon-nome {
 	color: yellow;
 	letter-spacing: 4px;
-	text-shadow: 2px 2px 0 black, -2px 2px 0 black, 2px -2px 0 black, -2px -2px 0 black;
+	text-shadow: 2px 2px 0 blue, -1px 1px 0 blue, 1px -1px 0 blue, -1px -1px 0 blue;
 	text-transform: capitalize;
 }
 .form {
@@ -65,19 +38,10 @@ main {
 	outline: none;
 	border: 2px solid #333;
 	border-radius: 5px;
-	color: yellow;
-	letter-spacing: 3px;
+	color: #444;
 	font-size: clamp(8px, 5vw, 0.8rem);
-	text-shadow: 1px 1px 0 black, -1px 1px 0 black, 1px -1px 0 black, -1px -1px 0 black;
 	box-shadow: -3px 4px 0 #888, -5px 7px 0 #333;
-	font-family: "Pokemon Solid", sans-serif;
-}
-.buttons {
-	position: absolute;
-	bottom: 12%;
-	left: 50%;
-	width: 60%;
-	transform: translate(-55%, 0);
+	font-family: "Oxanium", sans-serif;
 }
 .buttons {
 	position: absolute;
@@ -88,7 +52,6 @@ main {
 	display: flex;
 	gap: 20px;
 }
-
 .button {
 	width: 50%;
 	padding: 4%;
@@ -99,6 +62,9 @@ main {
 	color: white;
 	background-color: #444;
 	box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
+	font-family: "Oxanium", sans-serif;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
 }
 
 .button:active {
