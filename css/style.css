@@ -18,7 +18,7 @@
 	top: 53.8%;
 	right: 27%;
 	font-family: "Pokemon Solid", sans-serif;
-	font-size: clamp(8px, 5vw, 0.8rem);
+	font-size: clamp(8px, 5vw, 1rem);
 }
 .pokemon-nome {
 	color: yellow;
