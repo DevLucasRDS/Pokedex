@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Habilidades</title>
+		<link rel="shortcut icon" href="../imagens/favicon/favicon-16x16.png" type="image/x-icon" />
+		<link rel="stylesheet" href="../css/habilidades.css" />
+		<link rel="stylesheet" href="../css/base.css" />
+
+		<script defer src="../JS/mobile-navbar.js"></script>
+		<script src="../JS/habilidades.js" defer></script>
+		<script src="../JS/scrpt.js" defer></script>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<a class="logo" href="../index.html">Pokedex</a>
+				<div class="mobile-menu">
+					<div class="line1"></div>
+					<div class="line2"></div>
+					<div class="line3"></div>
+				</div>
+				<ul class="nav-list">
+					<li><a href="lista.html">Lista</a></li>
+					<li><a href="habilidades.html">Habilidades</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<div class="container-habilidades">
+				<div class="left">
+					<img src="#" alt="pokemon" class="pokemon-imagem" />
+					<h1 class="pokemon-data">
+						<span class="pokemon-numero"></span>
+						<span class="pokemon-nome"></span>
+					</h1>
+					<form class="form">
+						<input type="search" class="input_pesquisa" placeholder="Nome ou Numero" required />
+					</form>
+					<div class="buttons">
+						<button class="button btn-prev">&lt prev</button>
+						<button class="button btn-next">next &gt</button>
+						<button class="button btn-prevgen">&lt Gen</button>
+						<button class="button btn-nextgen">Gen &gt</button>
+						<button class="button btn-shiny">shiny</button>
+					</div>
+				</div>
+				<div class="right"></div>
+			</div>
+		</main>
+	</body>
+</html>
