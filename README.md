@@ -18,12 +18,12 @@ Teste prático Unifametro: uma aplicação web de Pokédex utilizando HTML, CSS 
 ✅Faça uma requisição à PokéAPI para buscar os dados do Pokémon usando o nome ou ID
    fornecido.
 ✅Exiba as informações básicas do Pokémon (nome, imagem, tipo) na página.
-❌Trate erros de busca, exibindo uma mensagem caso o Pokémon não seja encontrado
+✅Trate erros de busca, exibindo uma mensagem caso o Pokémon não seja encontrado
 
 4. Exibição de Lista de Pokémon
-❌ Implemente uma função que faça uma requisição à PokéAPI para listar os primeiros 20 Pokémon.
-❌ Exiba essa lista na página com o nome e imagem dos Pokémon.
-❌ Implemente a navegação para carregar mais Pokémon (paginação).
+✅ Implemente uma função que faça uma requisição à PokéAPI para listar os primeiros 20 Pokémon.
+✅ Exiba essa lista na página com o nome e imagem dos Pokémon.
+✅ Implemente a navegação para carregar mais Pokémon (paginação).
 
 5. Funcionalidades Avançadas
 ❌ Adicione a exibição de habilidades do Pokémon.
