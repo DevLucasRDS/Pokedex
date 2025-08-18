@@ -1,5 +1,6 @@
+// lista.js
 const btnCarregar = document.querySelector("#btn-carregar");
-let pagina = 0; // Página atual da lista
+let pagina = 0;
 
 // Função para buscar Pokémon
 const fetchPokemon = async (pokemon) => {
