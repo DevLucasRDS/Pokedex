@@ -4,7 +4,7 @@ Teste prático Unifametro: uma aplicação web de Pokédex utilizando HTML, CSS 
 1. Estrutura Básica (HTML)
  ✅Crie a estrutura básica de um documento HTML.
  ✅Inclua uma seção <header> com o título "Pokédex".
- ✅Crie uma <div> ou <section> para exibir as informações do Pokémon.
+ ❌Crie uma <div> ou <section> para exibir as informações do Pokémon.
  ✅Adicione um campo de entrada ( <input> ) e um botão para buscar Pokémon pelo nome ou ID
 
 2. Estilização (CSS)
@@ -26,17 +26,17 @@ Teste prático Unifametro: uma aplicação web de Pokédex utilizando HTML, CSS 
 ✅ Implemente a navegação para carregar mais Pokémon (paginação).
 
 5. Funcionalidades Avançadas
-✅ Adicione a exibição de habilidades do Pokémon.
-✅ Implemente a busca por múltiplos critérios (ex: tipo e nome).
-✅ Implemente botões para avançar para o próximo pokemon e retornar ao pokemon anterior.
-✅ Implemente botões para trocar a image/sprite exibida do pokemon de acordo com o jogo e se é
+❌ Adicione a exibição de habilidades do Pokémon.
+❌ Implemente a busca por múltiplos critérios (ex: tipo e nome).
+❌ Implemente botões para avançar para o próximo pokemon e retornar ao pokemon anterior.
+❌ Implemente botões para trocar a image/sprite exibida do pokemon de acordo com o jogo e se é
 versão shiny.
 
 6. Testes e Correções
-✅ Teste o funcionamento da Pokédex em diferentes navegadores.
-✅ Verifique a responsividade em dispositivos móveis.
-✅ Corrija possíveis bugs e valide o código.
+❌ Teste o funcionamento da Pokédex em diferentes navegadores.
+❌ Verifique a responsividade em dispositivos móveis.
+❌ Corrija possíveis bugs e valide o código.
 
 7. Documentação
-✅ Documente o código JavaScript com comentários explicativos.
+❌ Documente o código JavaScript com comentários explicativos.
 ❌ Crie um arquivo README explicando como o projeto foi desenvolvido e como usá-lo
