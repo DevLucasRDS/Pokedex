@@ -4,27 +4,67 @@
 	display: flex;
 	height: 85vh;
 }
-
+.box {
+	flex: 1;
+	margin: 10px;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	text-align: center;
+}
 .left {
 	flex: 1;
-	background-color: ghostwhite;
 	color: black;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	gap: 20px;
+	background-color: #e0f7fa;
+	color: #00796b;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+		rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
-
 .right {
-	flex: 1;
-	background-color: greenyellow;
-	color: white;
+	background: gray;
+	padding: 20px;
+	width: 250px;
+	min-height: 200px;
+	border-radius: 15px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
 	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-family: "Oxanium", sans-serif;
+	background-color: #ffe0b2;
+	color: #e65100;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+		rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
-
+h2 {
+	margin-top: 0;
+	color: inherit;
+}
+p {
+	line-height: 1.6;
+}
+.right h2 {
+	font-size: 1.2rem;
+	margin-bottom: 15px;
+	color: #333;
+}
+.right ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.right li {
+	font-size: 1rem;
+	margin: 5px 0;
+	text-transform: capitalize;
+}
 .pokemon-imagem {
 	height: 15%;
 }
@@ -37,25 +77,19 @@
 	font-family: "Pokemon Solid", sans-serif;
 	font-size: clamp(8px, 5vw, 1rem);
 }
-
 .pokemon-nome {
 	color: yellow;
 	letter-spacing: 4px;
 	text-shadow: 2px 2px 0 blue, -1px 1px 0 blue, 1px -1px 0 blue, -1px -1px 0 blue;
 	text-transform: capitalize;
 }
-
 .buttons {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	grid-template-areas:
-		"prev next"
-		"prevgen nextgen"
-		"shiny shiny";
+	grid-template-areas: "prev next" "prevgen nextgen" "shiny shiny";
 	gap: 15px;
 	width: 80%;
 }
-
 .btn-prev {
 	grid-area: prev;
 }
@@ -71,7 +105,6 @@
 .btn-shiny {
 	grid-area: shiny;
 }
-
 .button {
 	width: 100%;
 	padding: 12px;

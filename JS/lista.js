@@ -1,31 +1,26 @@
-const form = document.querySelector("form");
-const input = document.querySelector(".input_pesquisa");
+const btnCarregar = document.querySelector("#btn-carregar");
+let pagina = 0;
 
+// Função para buscar Pokémon
 const fetchPokemon = async (pokemon) => {
 	const APIResponse = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`);
-	if (APIResponse.status === 200) {
-		const data = await APIResponse.json();
-		return data;
-	} else {
-		return null;
-	}
+	if (APIResponse.status === 200) return await APIResponse.json();
+	return null;
 };
 
-async function listarPokemonsAte(numero) {
+// carrega a lista de Pokémon
+async function listarPokemonsPorPagina() {
 	const listaContainer = document.createElement("ul");
-	listaContainer.style.marginTop = "20px";
-	listaContainer.style.listStyle = "none";
-	listaContainer.style.padding = "0";
+	listaContainer.classList.add("lista-pokemons");
 
-	for (let i = 1; i <= numero; i++) {
+	const inicio = pagina * 20 + 1;
+	const fim = inicio + 19;
+
+	for (let i = inicio; i <= fim; i++) {
 		const data = await fetchPokemon(i);
 		if (data) {
 			const item = document.createElement("li");
-			item.innerHTML = `
-            <img src="${data.sprites.front_default}" alt="${data.name}" style="width:48px;vertical-align:middle;">
-            <br>
-            ${data.id} - ${data.name}
-         `;
+			item.innerHTML = `<img src="${data.sprites.front_default}" alt="${data.name}" style="width:48px;vertical-align:middle;"><br>${data.id} - ${data.name}`;
 			listaContainer.appendChild(item);
 		}
 	}
@@ -33,15 +28,9 @@ async function listarPokemonsAte(numero) {
 	const oldList = document.querySelector(".lista-pokemons");
 	if (oldList) oldList.remove();
 
-	listaContainer.classList.add("lista-pokemons");
 	document.querySelector("main").appendChild(listaContainer);
+	pagina++;
 }
 
-form.addEventListener("submit", (event) => {
-	event.preventDefault();
-	const valor = input.value.trim();
-	if (!isNaN(valor) && valor > 1) {
-		listarPokemonsAte(Number(valor));
-	}
-	input.value = "";
-});
+// Eventos
+btnCarregar.addEventListener("click", listarPokemonsPorPagina);

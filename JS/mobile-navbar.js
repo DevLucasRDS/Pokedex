@@ -1,13 +1,14 @@
+// Navbar mobile para responsividade
 class MobileNavbar {
 	constructor(mobileMenu, navList, navLinks) {
 		this.mobileMenu = document.querySelector(mobileMenu);
 		this.navList = document.querySelector(navList);
 		this.navLinks = document.querySelectorAll(navLinks);
 		this.activeClass = "active";
-
 		this.handleClick = this.handleClick.bind(this);
 	}
 
+	// Animação dos links do menu
 	animateLinks() {
 		this.navLinks.forEach((link, index) => {
 			link.style.animation
@@ -27,12 +28,11 @@ class MobileNavbar {
 	}
 
 	init() {
-		if (this.mobileMenu) {
-			this.addClickEvent();
-		}
+		if (this.mobileMenu) this.addClickEvent();
 		return this;
 	}
 }
 
+// Inicializa Navbar
 const mobileNavbar = new MobileNavbar(".mobile-menu", ".nav-list", ".nav-list li");
 mobileNavbar.init();
