@@ -26,6 +26,14 @@
 	text-shadow: 2px 2px 0 blue, -1px 1px 0 blue, 1px -1px 0 blue, -1px -1px 0 blue;
 	text-transform: capitalize;
 }
+.pokedex-container {
+	position: relative;
+	width: 100%;
+	max-width: 425px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 .form {
 	position: absolute;
 	width: 65%;

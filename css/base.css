@@ -78,14 +78,6 @@ main {
 	padding: 15px;
 	min-height: calc(100vh - 80px);
 }
-.pokedex-container {
-	position: relative;
-	width: 100%;
-	max-width: 425px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
 
 @media (max-width: 700px) {
 	nav {
